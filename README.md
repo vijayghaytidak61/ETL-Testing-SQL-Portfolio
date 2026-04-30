@@ -23,5 +23,10 @@ This repository contains SQL queries used for validating ETL processes and data 
 ## File Included
 - SQL_Queries.sql → Contains all validation queries
 
+- -- Banking: High-value transaction validation
+SELECT *
+FROM transactions_target
+WHERE amount > 1000000;
+
 ## Author
 Vijay – ETL Test Engineer
